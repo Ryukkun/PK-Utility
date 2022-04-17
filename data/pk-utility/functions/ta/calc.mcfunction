@@ -29,4 +29,4 @@ scoreboard players reset $Sec-0 Ryukkun.TA-Time
 execute if score $Sec Ryukkun.TA-Time matches 0..9 run scoreboard players set $Sec-0 Ryukkun.TA-Time 0
 
 scoreboard players reset $Tick-0 Ryukkun.TA-Time
-execute if score $Tick Ryukkun.TA-Time matches 0..1 run scoreboard players set $Tick-0 Ryukkun.TA-Time 0
+execute if score $Tick Ryukkun.TA-Time matches 0..9 run scoreboard players set $Tick-0 Ryukkun.TA-Time 0
