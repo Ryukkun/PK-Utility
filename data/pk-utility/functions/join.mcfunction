@@ -1,0 +1,1 @@
+scoreboard players set @s Ryukkun.TA-Time-Record -1
