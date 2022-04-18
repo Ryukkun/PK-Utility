@@ -26,3 +26,4 @@ execute if data storage pk-utility: {CP:{Success:0b}} run function pk-utility:cp
 # Tags
 tag @s add Ryukkun.On-Diamond-Lock
 tag @s add Ryukkun.On-SetSign-Lock
+tag @s add Ryukkun.On-SetSign
