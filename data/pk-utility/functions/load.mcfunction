@@ -19,3 +19,10 @@ team add No-Collision
 team modify No-Collision collisionRule never
 
 execute unless data storage pk-utility: Settings.Perfix run data modify storage pk-utility: Settings.Perfix set value '[{"text":"◁ ","color":"gray"},{"text":"P","color":"dark_aqua"},{"text":"K","color":"aqua"},{"text":" ▷","color":"gray"}]'
+execute unless data storage pk-utility: Settings.No-Collision run data modify storage pk-utility: Settings.No-Collision set value 1b
+execute unless data storage pk-utility: Settings.Diamond run data modify storage pk-utility: Settings.Diamond set value 0b
+execute unless data storage pk-utility: Settings.Set-CP.Message run data modify storage pk-utility: Settings.Set-CP.Message set value 1b
+execute unless data storage pk-utility: Settings.Set-CP.Particle run data modify storage pk-utility: Settings.Set-CP.Particle set value 1b
+execute unless data storage pk-utility: Settings.Set-CP.Sound run data modify storage pk-utility: Settings.Set-CP.Sound set value 1b
+execute unless data storage pk-utility: Settings.Sponge run data modify storage pk-utility: Settings.Sponge set value 0b
+execute unless data storage pk-utility: Settings.TA-Sound run data modify storage pk-utility: Settings.TA-Sound set value 1b
