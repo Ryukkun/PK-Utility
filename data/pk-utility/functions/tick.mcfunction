@@ -22,7 +22,7 @@ scoreboard players enable @a Ryukkun.Trigger
 #### CP     ---------------------------------------------------------------------
 ## Set
 # Diamond (-1)[0]
-execute as @a[tag=!Ryukkun.On-Diamond-Lock] at @s if block ~ ~-0.0001 ~ diamond_block run function pk-utility:cp/set
+execute if data storage pk-utility: {Settings:{Diamond:1b}} as @a[tag=!Ryukkun.On-Diamond-Lock] at @s if block ~ ~-0.0001 ~ diamond_block run function pk-utility:cp/set
 tag @a remove Ryukkun.On-Diamond-Lock
 execute as @a at @s if block ~ ~-0.0001 ~ diamond_block run tag @s add Ryukkun.On-Diamond-Lock
 
@@ -40,3 +40,6 @@ execute as @a[scores={Ryukkun.Used-CSick=1..}] at @s run function pk-utility:cp/
 scoreboard players set @a Ryukkun.Used-CSick 0
 
 execute as @a[tag=Ryukkun.Stop-TP] at @s run function pk-utility:cp/tp/2-tp
+
+# On Sponge
+execute if data storage pk-utility: {Settings:{Sponge:1b}} as @a at @s if block ~ ~-0.0001 ~ sponge run function pk-utility:cp/tp/check
