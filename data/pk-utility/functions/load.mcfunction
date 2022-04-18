@@ -15,4 +15,7 @@ scoreboard players set $20 Ryukkun.TA-Time 20
 scoreboard players set $60 Ryukkun.TA-Time 60
 scoreboard players set $3600 Ryukkun.TA-Time 3600
 
-execute unless data storage pk-utility: Perfix run data modify storage pk-utility: Perfix set value '[{"text":"◁ ","color":"gray"},{"text":"P","color":"dark_aqua"},{"text":"K","color":"aqua"},{"text":" ▷","color":"gray"}]'
+team add No-Collision
+team modify No-Collision collisionRule never
+
+execute unless data storage pk-utility: Settings.Perfix run data modify storage pk-utility: Settings.Perfix set value '[{"text":"◁ ","color":"gray"},{"text":"P","color":"dark_aqua"},{"text":"K","color":"aqua"},{"text":" ▷","color":"gray"}]'
