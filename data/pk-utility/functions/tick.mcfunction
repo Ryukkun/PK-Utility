@@ -27,9 +27,9 @@ tag @a remove Ryukkun.On-Diamond-Lock
 execute as @a at @s if block ~ ~-0.0001 ~ diamond_block run tag @s add Ryukkun.On-Diamond-Lock
 
 # Sign (-2~-3)[-1~-2]
-execute as @a at @s positioned ~ ~-2 ~ if block ~ ~ ~ #signs if data block ~ ~ ~ {Text1:'{"text":"set cp"}'} run tag @s add Ryukkun.On-SetSign
-execute as @a at @s positioned ~ ~-3 ~ if block ~ ~ ~ #signs if data block ~ ~ ~ {Text1:'{"text":"set cp"}'} run tag @s add Ryukkun.On-SetSign
-execute as @a[tag=Ryukkun.On-SetSign,tag=!Ryukkun.On-SetSign-Lock] if data entity @s {OnGround:1b} run function pk-utility:cp/set
+execute as @a[nbt={OnGround:1b}] at @s positioned ~ ~-2 ~ if block ~ ~ ~ #signs if data block ~ ~ ~ {Text1:'{"text":"set cp"}'} run tag @s add Ryukkun.On-SetSign
+execute as @a[nbt={OnGround:1b}] at @s positioned ~ ~-3 ~ if block ~ ~ ~ #signs if data block ~ ~ ~ {Text1:'{"text":"set cp"}'} run tag @s add Ryukkun.On-SetSign
+execute as @a[tag=Ryukkun.On-SetSign,tag=!Ryukkun.On-SetSign-Lock] at @s run function pk-utility:cp/set
 tag @a remove Ryukkun.On-SetSign-Lock
 tag @a[tag=Ryukkun.On-SetSign] add Ryukkun.On-SetSign-Lock
 tag @a remove Ryukkun.On-SetSign
