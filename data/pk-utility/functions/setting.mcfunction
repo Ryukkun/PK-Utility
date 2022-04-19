@@ -26,6 +26,11 @@ execute unless data storage pk-utility: {Settings:{TA-Sound:1b}} run tellraw @s 
 
 tellraw @s " "
 
+execute if data storage pk-utility: {Settings:{World-Spawn:1b}} run tellraw @s [{"text":"   - ","font":"uniform"},{"text":",                     ","color":"dark_gray"},{"text":"⦿","color":"green"},{"text":"  "},{"text":" ◯ ","color":"gray","clickEvent":{"action":"run_command","value":"/function pk-utility:settings/ta-sound/0"}}]
+execute unless data storage pk-utility: {Settings:{World-Spawn:1b}} run tellraw @s [{"text":"   - TAを開始・終了した時のSound","font":"uniform"},{"text":",                    ","color":"dark_gray"},{"text":" ◯ ","color":"gray","clickEvent":{"action":"run_command","value":"/function pk-utility:settings/ta-sound/1"}},{"text":"  "},{"text":"⦿","color":"red"}]
+
+tellraw @s " "
+
 execute store result storage pk-utility: Settings.GameRule.SendCF byte 1 run gamerule sendCommandFeedback
 execute if data storage pk-utility: {Settings:{GameRule:{SendCF:1b}}} run tellraw @s [{"text":"   - ","font":"uniform"},{"text":"Gamerule SendCommandFeedback","hoverEvent":{"action":"show_text","value":{"text":"プレイヤーが実行したコマンドのログをチャット欄に表示するかどうか。"}}},{"text":"'                       ","color":"dark_gray"},{"text":"⦿","color":"green"},{"text":"  "},{"text":" ◯ ","color":"gray","clickEvent":{"action":"run_command","value":"/function pk-utility:settings/gamerule/sendcf/0"}}]
 execute unless data storage pk-utility: {Settings:{GameRule:{SendCF:1b}}} run tellraw @s [{"text":"   - ","font":"uniform"},{"text":"Gamerule SendCommandFeedback","hoverEvent":{"action":"show_text","value":{"text":"プレイヤーが実行したコマンドのログをチャット欄に表示するかどうか。"}}},{"text":"'                      ","color":"dark_gray"},{"text":" ◯ ","color":"gray","clickEvent":{"action":"run_command","value":"/function pk-utility:settings/gamerule/sendcf/1"}},{"text":"  "},{"text":"⦿","color":"red"}]
