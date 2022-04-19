@@ -1,3 +1,3 @@
 execute if score @s Ryukkun.X matches -2147483648..2147483647 as @s[tag=!Ryukkun.Stop-TP] run function pk-utility:cp/tp/1
 execute unless score @s Ryukkun.X matches -2147483648..2147483647 unless block ~ ~-0.0001 ~ sponge run tellraw @s [{"text":" ","color":"white"},{"nbt":"Settings.Perfix","storage":"pk-utility:","interpret":true},{"text":"\u0020\u0020"},{"text":"チェックポイント","bold":true,"color":"yellow"},{"text":"が設定されていません","bold":true,"color":"red"}]
-execute unless score @s Ryukkun.X matches -2147483648..2147483647 unless block ~ ~-0.0001 ~ sponge run playsound minecraft:entity.player.breath master @s ~ ~ ~ 0.5 1 0.5
+execute unless score @s Ryukkun.X matches -2147483648..2147483647 unless block ~ ~-0.0001 ~ sponge if data storage pk-utility: {Settings:{TP-Failed-Sound:1b}} run playsound minecraft:entity.player.breath master @s ~ ~ ~ 0.5 1 0.5
