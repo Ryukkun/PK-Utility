@@ -26,8 +26,8 @@ execute unless data storage pk-utility: {Settings:{TA-Sound:1b}} run tellraw @s 
 
 tellraw @s " "
 
-execute if data storage pk-utility: {Settings:{World-Spawn:1b}} run tellraw @s [{"text":"   - ","font":"uniform"},{"text":",                     ","color":"dark_gray"},{"text":"⦿","color":"green"},{"text":"  "},{"text":" ◯ ","color":"gray","clickEvent":{"action":"run_command","value":"/function pk-utility:settings/ta-sound/0"}}]
-execute unless data storage pk-utility: {Settings:{World-Spawn:1b}} run tellraw @s [{"text":"   - TAを開始・終了した時のSound","font":"uniform"},{"text":",                    ","color":"dark_gray"},{"text":" ◯ ","color":"gray","clickEvent":{"action":"run_command","value":"/function pk-utility:settings/ta-sound/1"}},{"text":"  "},{"text":"⦿","color":"red"}]
+execute if data storage pk-utility: {Settings:{World-Spawn:1b}} run tellraw @s [{"text":"   - 初めてjoinしてきた時にスポーン地点がずれる仕様の修正","font":"uniform"},{"text":",                     ","color":"dark_gray"},{"text":"⦿","color":"green"},{"text":"  "},{"text":" ◯ ","color":"gray","clickEvent":{"action":"run_command","value":"/function pk-utility:settings/ta-sound/0"}}]
+execute unless data storage pk-utility: {Settings:{World-Spawn:1b}} run tellraw @s [{"text":"   - 初めてjoinしてきた時にスポーン地点がずれる仕様の修正","font":"uniform"},{"text":",                    ","color":"dark_gray"},{"text":" ◯ ","color":"gray","clickEvent":{"action":"run_command","value":"/function pk-utility:settings/ta-sound/1"}},{"text":"  "},{"text":"⦿","color":"red"}]
 
 tellraw @s " "
 
