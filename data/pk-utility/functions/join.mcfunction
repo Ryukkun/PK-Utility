@@ -4,7 +4,7 @@ execute store result score @s Ryukkun.PL-Num run scoreboard players add $Base Ry
 
 execute if data storage pk-utility: {Settings:{No-Collision:1b}} run team join No-Collision @s
 
-execute unless data storage pk-utility: {Settings:{First:1b}} store success storage pk-utility: Settings.First byte 1 run tellraw @a [{"text":""}]
+execute unless data storage pk-utility: {Settings:{First:1b}} store success storage pk-utility: Settings.First byte 1 as @a run function pk-utility:settings/join
 
 execute if data storage pk-utility: {Settings:{Join-GiveItem:1b}} run function pk-utility:get
 

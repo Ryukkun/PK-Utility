@@ -18,6 +18,8 @@ scoreboard players set $3600 Ryukkun.TA-Time 3600
 team add No-Collision
 team modify No-Collision collisionRule never
 
+gamerule maxCommandChainLength 65536
+
 execute unless data storage pk-utility: Settings.Perfix run data modify storage pk-utility: Settings.Perfix set value '[{"text":"◁ ","color":"gray"},{"text":"P","color":"dark_aqua"},{"text":"K","color":"aqua"},{"text":" ▷","color":"gray"}]'
 execute unless data storage pk-utility: Settings.No-Collision run data modify storage pk-utility: Settings.No-Collision set value 1b
 execute unless data storage pk-utility: Settings.Diamond run data modify storage pk-utility: Settings.Diamond set value 0b
