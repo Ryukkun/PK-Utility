@@ -2,7 +2,6 @@ scoreboard objectives add Ryukkun.TA-Time dummy
 scoreboard objectives add Ryukkun.TA-Time-Record dummy
 scoreboard objectives add Ryukkun.Trigger trigger
 scoreboard objectives add Ryukkun.PL-Num dummy
-scoreboard objectives add Ryukkun.Ranking dummy
 scoreboard objectives add Ryukkun.Used-CSick minecraft.used:carrot_on_a_stick
 scoreboard objectives add Ryukkun.X dummy
 scoreboard objectives add Ryukkun.Y dummy
