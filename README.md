@@ -1,20 +1,25 @@
-# Parkour-Utility
-# &nbsp;　Piano (in Minecraft)
-何の変哲もないただのピアノ。<br><br>
+# &nbsp;　Parkour-Utility
+簡単なCheckPoint(CP)機能や Time Attack(TA)機能が備わっています。<br>
+他にもアスレチック製作者用の機能などが盛りだくさん!!<br><br>
 
 ## ◈ 対応バージョン<br>
-  - 1.16 以上<br><br>
+  - 1.16.x 以上<br><br>
   
 ## ◈ 使い方
 ### 1. コマンド
-  `/function #piano:summon` 目の前にピアノを召喚します<br>
-  `/function #piano:delete` このコマンドを実行した後最初にクリックされたピアノを削除します<br><br>
+  `/function #pk-utility:help` Helpを表示します<br>
+  `/function #pk-utility:setting` 設定画面を表示します<br>
+  `/function #pk-utility:ranking` タイムアタックのランキングを表示します<br>
+  `/function #pk-utility:get` 右クリックでCPへ戻ることができるアイテムを配布します。コマンドブロックへ入力し、信号を与えた場合、近くのプレイヤーへ配布します<br><br>
 
-### 2. 鍵盤操作
-  - 鍵盤をクリックすることで音を鳴らすことができます。<br>
-  - 右クリック・左クリック　ともに対応していますが、右クリックを推奨しています。<br><br>
+### 2. CP
+  - set<br>
+    - 1~2ブロック下に 「set cp」 と、小文字で書かれた看板を置くことで、CPを更新できる場所を作ることができます<br>
+    - 設定を変更することで、ダイヤモンドブロックを踏むだけでCPを更新できるようにすることもできます<br><br>
 
-### 3. 注意点
+  - tp<br>
+    - `/function #pk-utility:get`で手に入る 「Back to CP」 を持って右クリックすることで、最後に更新されたCPの場所へ戻ることができます
+### 3. TA
   - 鍵盤の判定が鍵盤の下1.5ブロックほどまで続いています。<br>
   - 鍵盤を左クリックした際など、限られた場合でのみ村人が一瞬描画されることがあります。<br>
   - 一段目の一番左にある白鍵には当たり判定がありません。そこだけ張りぼてです。　　ゆるして;w;<br><br>
