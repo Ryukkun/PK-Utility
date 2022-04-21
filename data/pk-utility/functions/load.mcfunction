@@ -28,3 +28,6 @@ execute unless data storage pk-utility: Settings.Set-CP.Particle run data modify
 execute unless data storage pk-utility: Settings.Set-CP.Sound run data modify storage pk-utility: Settings.Set-CP.Sound set value 1b
 execute unless data storage pk-utility: Settings.Sponge run data modify storage pk-utility: Settings.Sponge set value 0b
 execute unless data storage pk-utility: Settings.TA-Sound run data modify storage pk-utility: Settings.TA-Sound set value 1b
+execute unless data storage pk-utility: Settings.TP-Failed-Sound run data modify storage pk-utility: Settings.TP-Failed-Sound set value 1b
+execute unless data storage pk-utility: Settings.World-Spawn run data modify storage pk-utility: Settings.World-Spawn set value 0b
+execute unless data storage pk-utility: Settings.Join-GiveItem run data modify storage pk-utility: Settings.Join-GiveItem set value 1b
