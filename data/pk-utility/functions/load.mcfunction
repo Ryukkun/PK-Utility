@@ -20,14 +20,20 @@ team modify No-Collision collisionRule never
 
 gamerule maxCommandChainLength 65536
 
+
 execute unless data storage pk-utility: Settings.Perfix run data modify storage pk-utility: Settings.Perfix set value '[{"text":"◁ ","color":"gray"},{"text":"P","color":"dark_aqua"},{"text":"K","color":"aqua"},{"text":" ▷","color":"gray"}]'
 execute unless data storage pk-utility: Settings.No-Collision run data modify storage pk-utility: Settings.No-Collision set value 1b
-execute unless data storage pk-utility: Settings.Diamond run data modify storage pk-utility: Settings.Diamond set value 0b
-execute unless data storage pk-utility: Settings.Set-CP.Message run data modify storage pk-utility: Settings.Set-CP.Message set value 1b
-execute unless data storage pk-utility: Settings.Set-CP.Particle run data modify storage pk-utility: Settings.Set-CP.Particle set value 1b
-execute unless data storage pk-utility: Settings.Set-CP.Sound run data modify storage pk-utility: Settings.Set-CP.Sound set value 1b
-execute unless data storage pk-utility: Settings.Sponge run data modify storage pk-utility: Settings.Sponge set value 0b
-execute unless data storage pk-utility: Settings.TA-Sound run data modify storage pk-utility: Settings.TA-Sound set value 1b
-execute unless data storage pk-utility: Settings.TP-Failed-Sound run data modify storage pk-utility: Settings.TP-Failed-Sound set value 1b
+
+execute unless data storage pk-utility: Settings.CP.Diamond run data modify storage pk-utility: Settings.CP.Diamond set value 0b
+execute unless data storage pk-utility: Settings.CP.Set.Message run data modify storage pk-utility: Settings.CP.Set.Message set value 1b
+execute unless data storage pk-utility: Settings.CP.Set.Particle run data modify storage pk-utility: Settings.CP.Set.Particle set value 1b
+execute unless data storage pk-utility: Settings.CP.Set.Sound run data modify storage pk-utility: Settings.CP.Set.Sound set value 1b
+execute unless data storage pk-utility: Settings.CP.Sponge.Enable run data modify storage pk-utility: Settings.CP.Sponge.Enable set value 0b
+execute unless data storage pk-utility: Settings.CP.Sponge.Sound run data modify storage pk-utility: Settings.CP.Sponge.Sound set value 1b
+execute unless data storage pk-utility: Settings.CP.TP.Failed-Sound run data modify storage pk-utility: Settings.CP.TP.Failed-Sound set value 1b
+
+execute unless data storage pk-utility: Settings.TA.Sound run data modify storage pk-utility: Settings.TA.Sound set value 1b
+execute unless data storage pk-utility: Settings.TA.Fin-ResetCP run data modify storage pk-utility: Settings.TA.Fin-ResetCP set value 1b
+
 execute unless data storage pk-utility: Settings.World-Spawn run data modify storage pk-utility: Settings.World-Spawn set value 0b
 execute unless data storage pk-utility: Settings.Join-GiveItem run data modify storage pk-utility: Settings.Join-GiveItem set value 1b

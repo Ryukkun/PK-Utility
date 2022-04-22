@@ -14,11 +14,11 @@ execute store result score @s Ryukkun.F-Pitch run data get entity @s Rotation[1]
 execute if score @s Ryukkun.X = $CP-X1 Ryukkun.X if score @s Ryukkun.Y = $CP-Y1 Ryukkun.X if score @s Ryukkun.Z = $CP-Z1 Ryukkun.X run tag @s add Ryukkun.Match-CP
 
 # Message
-execute if data storage pk-utility: {Settings:{Set-CP:{Message:1b}}} run tellraw @s [{"text":" ","color":"white"},{"nbt":"Settings.Perfix","storage":"pk-utility:","interpret":true},{"text":"\u0020\u0020"},{"text":"チェックポイント","color":"yellow","bold": true},{"text":"を更新しました！","color":"white"}]
+execute if data storage pk-utility: {Settings:{CP:{Set:{Message:1b}}}} run tellraw @s [{"text":" ","color":"white"},{"nbt":"Settings.Perfix","storage":"pk-utility:","interpret":true},{"text":"\u0020\u0020"},{"text":"チェックポイント","color":"yellow","bold": true},{"text":"を更新しました！","color":"white"}]
 
 # Effect
-execute if data storage pk-utility: {Settings:{Set-CP:{Sound:1b}}} run playsound minecraft:entity.chicken.egg master @s[tag=Ryukkun.Match-CP] ~ ~ ~ 0.7 2 0.7
-execute if data storage pk-utility: {Settings:{Set-CP:{Sound:1b}}} run playsound minecraft:entity.firework_rocket.launch master @s[tag=!Ryukkun.Match-CP] ~ ~ ~ 0.7 1 0.7
-execute if data storage pk-utility: {Settings:{Set-CP:{Particle:1b}}} run particle minecraft:end_rod ~ ~0.5 ~ 0 0 0 0.07 30 normal @s[tag=!Ryukkun.Match-CP]
+execute if data storage pk-utility: {Settings:{CP:{Set:{Sound:1b}}}} run playsound minecraft:entity.chicken.egg master @s[tag=Ryukkun.Match-CP] ~ ~ ~ 0.7 2 0.7
+execute if data storage pk-utility: {Settings:{CP:{Set:{Sound:1b}}}} run playsound minecraft:entity.firework_rocket.launch master @s[tag=!Ryukkun.Match-CP] ~ ~ ~ 0.7 1 0.7
+execute if data storage pk-utility: {Settings:{CP:{Set:{Particle:1b}}}} run particle minecraft:end_rod ~ ~0.5 ~ 0 0 0 0.07 30 normal @s[tag=!Ryukkun.Match-CP]
 
 tag @s remove Ryukkun.Match-CP

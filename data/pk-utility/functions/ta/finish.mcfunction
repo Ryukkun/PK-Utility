@@ -12,7 +12,10 @@ execute if score @s Ryukkun.TA-Time-Record matches -1 run scoreboard players ope
 execute if score @s Ryukkun.TA-Time < @s Ryukkun.TA-Time-Record run scoreboard players operation @s Ryukkun.TA-Time-Record = @s Ryukkun.TA-Time
 
 # Effect
-execute if data storage pk-utility: {Settings:{TA-Sound:1b}} run playsound minecraft:block.note_block.bell master @s ~ ~ ~ 0.5 2 0.5
+execute if data storage pk-utility: {Settings:{TA:{Sound:1b}}} run playsound minecraft:block.note_block.bell master @s ~ ~ ~ 0.5 2 0.5
+
+# Reset CP
+execute if data storage pk-utility: {Settings:{TA:{Fin-ResetCP:1b}}} run scoreboard players reset @s Ryukkun.X
 
 # remove tags
 tag @s add Ryukkun.On-TAFinish

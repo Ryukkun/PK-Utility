@@ -22,7 +22,7 @@ scoreboard players enable @a Ryukkun.Trigger
 #### CP     ---------------------------------------------------------------------
 ## Set
 # Diamond (-1)[0]
-execute if data storage pk-utility: {Settings:{Diamond:1b}} as @a[tag=!Ryukkun.On-Diamond-Lock,gamemode=!spectator] at @s if block ~ ~-0.0001 ~ diamond_block run function pk-utility:cp/set
+execute if data storage pk-utility: {Settings:{CP:{Diamond:1b}}} as @a[tag=!Ryukkun.On-Diamond-Lock,gamemode=!spectator] at @s if block ~ ~-0.0001 ~ diamond_block run function pk-utility:cp/set
 tag @a remove Ryukkun.On-Diamond-Lock
 execute as @a at @s if block ~ ~-0.0001 ~ diamond_block run tag @s add Ryukkun.On-Diamond-Lock
 
@@ -42,4 +42,5 @@ scoreboard players set @a Ryukkun.Used-CSick 0
 execute as @a[tag=Ryukkun.Stop-TP] at @s run function pk-utility:cp/tp/2-tp
 
 # On Sponge
-execute if data storage pk-utility: {Settings:{Sponge:1b}} as @a[gamemode=!spectator] at @s if block ~ ~-0.0001 ~ sponge run function pk-utility:cp/tp/check
+execute if data storage pk-utility: {Settings:{CP:{Sponge:{Enable:1b,Sound:1b}}}} as @a[gamemode=!spectator] at @s if block ~ ~-0.0001 ~ sponge run playsound minecraft:block.fire.extinguish master @s ~ ~ ~ 1 2 1
+execute if data storage pk-utility: {Settings:{CP:{Sponge:{Enable:1b}}}} as @a[gamemode=!spectator] at @s if block ~ ~-0.0001 ~ sponge run function pk-utility:cp/tp/check
