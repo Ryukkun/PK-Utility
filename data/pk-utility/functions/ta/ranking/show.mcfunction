@@ -22,6 +22,7 @@ execute as @a[scores={Ryukkun.Ranking=4}] run function pk-utility:ta/ranking/mes
 # No.5
 execute as @a[scores={Ryukkun.Ranking=5}] run function pk-utility:ta/ranking/message/no5
 # No My
-execute as @a run function pk-utility:ta/ranking/message/no-my
+execute as @a[scores={Ryukkun.TA-Time-Record=1..}] run function pk-utility:ta/ranking/message/no-my
+execute as @a[scores={Ryukkun.TA-Time-Record=-1}] run tellraw @s [{"text": "\n       ","font": "uniform"},{"text":"«"},{"text":"N/A","color": "light_purple"},{"text":"»     "},{"text": "記録なし","color":"white","bold":true,"underlined":true},{"text":"  "},{"selector":"@s","color": "light_purple","bold": true}]
 #
 tellraw @a [{"text":"\n","color":"white","font":"uniform"},{"text":"'","color": "dark_gray"},{"text":"⚕ ","color":"dark_aqua"},{"text":"----・----・----・----・----・----・----・----","color":"aqua"},{"text":" ⚕","color":"dark_aqua"}]
