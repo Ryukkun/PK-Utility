@@ -11,7 +11,6 @@ gamerule announceAdvancements false
 gamerule disableRaids true
 gamerule doEntityDrops false
 gamerule doInsomnia false
-gamerule doLimitedCrafting true
 gamerule doPatrolSpawning false
 gamerule doTraderSpawning false
 gamerule randomTickSpeed 0
