@@ -1,3 +1,3 @@
 gamerule sendCommandFeedback true
 
-function pk-utility:setting
+function pk-utility:settings/message-tag
