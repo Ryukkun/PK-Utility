@@ -16,7 +16,16 @@ scoreboard players set $60 R.TA-Time 60
 scoreboard players set $3600 R.TA-Time 3600
 
 team add No-Collision
+team add R.No1
+team add R.No2
+team add R.No3
 team modify No-Collision collisionRule never
+team modify R.No1 collisionRule never
+team modify R.No2 collisionRule never
+team modify R.No3 collisionRule never
+team modify R.No1 color aqua
+team modify R.No2 color gold
+team modify R.No3 color white
 
 gamerule maxCommandChainLength 65536
 
