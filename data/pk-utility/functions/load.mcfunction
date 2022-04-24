@@ -1,6 +1,7 @@
-scoreboard objectives add R.TA-Time dummy
+scoreboard objectives add R.TA-Time minecraft.custom:minecraft.play_one_minute
 scoreboard objectives add R.TA-Time-Record dummy
 scoreboard objectives add R.Trigger trigger
+scoreboard objectives add R.Stop-CP-Time minecraft.custom:minecraft.play_one_minute
 scoreboard objectives add R.PL-Num dummy
 scoreboard objectives add R.Used-CSick minecraft.used:carrot_on_a_stick
 scoreboard objectives add R.X dummy
@@ -28,6 +29,7 @@ team modify R.No2 color gold
 team modify R.No3 color white
 
 gamerule maxCommandChainLength 65536
+execute if data storage pk-utility: {Settings:{Peaceful:1b}} run difficulty peaceful
 
 
 execute unless data storage pk-utility: Settings.Perfix run data modify storage pk-utility: Settings.Perfix set value '[{"text":"◁ ","color":"gray"},{"text":"P","color":"dark_aqua"},{"text":"K","color":"aqua"},{"text":" ▷","color":"gray"}]'
