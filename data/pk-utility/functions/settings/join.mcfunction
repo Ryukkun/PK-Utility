@@ -20,6 +20,6 @@ tellraw @s [{"text": " [","font":"uniform"},{"text": "変更","color": "green","
 
 
 
-tellraw @s [{"text":"\n - 難易度 ","font":"uniform"},{"text":"ピースフル","color":"aqua"},{"text": " ["},{"text": "変更","color": "green","underlined": true,"clickEvent": {"action": "run_command","value": "/difficulty peaceful"}},{"text": "]"}]
+tellraw @s [{"text":"\n - 難易度 ","font":"uniform"},{"text":"ピースフル","color":"aqua"},{"text": " ["},{"text": "変更","color": "green","underlined": true,"clickEvent": {"action": "run_command","value": "/function pk-utility:settings/gamerule/difficulty/0"}},{"text": "]"}]
 
 tellraw @s [{"text":"\n - defaultgamemode ","font":"uniform","hoverEvent":{"action":"show_text","contents":[{"text":"マルチにてログイン時にプレイヤーのゲームモードを何にするか"}]}},{"text":"advanture","color":"aqua"},{"text": " ["},{"text": "変更","color": "green","underlined": true,"clickEvent": {"action": "run_command","value": "/defaultgamemode adventure"}},{"text": "]"}]

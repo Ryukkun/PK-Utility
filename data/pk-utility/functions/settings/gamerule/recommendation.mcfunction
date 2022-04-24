@@ -18,6 +18,6 @@ gamerule spawnRadius 0
 gamerule maxEntityCramming 0
 
 
-difficulty peaceful
+function pk-utility:settings/gamerule/difficulty/0
 
 defaultgamemode adventure
