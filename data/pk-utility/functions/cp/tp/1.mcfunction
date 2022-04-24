@@ -25,6 +25,6 @@ execute if data storage pk-utility: {CP:{Success:0b}} run function pk-utility:cp
 execute if data storage pk-utility: {CP:{Success:0b}} run tag @e[tag=R.Born] remove R.Born
 
 # Tags
-scoreboard players set @s R.Stop-CP-Time 0
+scoreboard players set @s R.Stop-CP-Time -100
 tag @s add R.On-Diamond-Lock
 tag @s add R.On-SetSign-Lock

@@ -13,6 +13,6 @@ execute if data storage pk-utility: {CP:{Success:1b}} run tag @s remove R.Stop-T
 execute if data storage pk-utility: {CP:{Success:1b}} run effect clear @s levitation
 
 # Tags
-scoreboard players set @s R.Stop-CP-Time 0
+scoreboard players set @s R.Stop-CP-Time -100
 tag @s add R.On-Diamond-Lock
 tag @s add R.On-SetSign-Lock

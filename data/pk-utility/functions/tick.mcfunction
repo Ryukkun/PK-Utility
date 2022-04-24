@@ -34,8 +34,9 @@ execute if data storage pk-utility: {Settings:{CP:{Diamond:1b}}} run function pk
 execute as @a[tag=R.OnGround] at @s positioned ~ ~-2 ~ if block ~ ~ ~ #signs if data block ~ ~ ~ {Text1:'{"text":"set cp"}'} run tag @s add R.On-SetSign
 execute as @a[tag=R.OnGround] at @s positioned ~ ~-3 ~ if block ~ ~ ~ #signs if data block ~ ~ ~ {Text1:'{"text":"set cp"}'} run tag @s add R.On-SetSign
 execute as @a[tag=R.On-SetSign,tag=!R.On-SetSign-Lock,gamemode=!spectator] at @s run function pk-utility:cp/set
-tag @a[scores={R.Stop-CP-Time=20..}] remove R.On-SetSign-Lock
+tag @a[scores={R.Stop-CP-Time=0..}] remove R.On-SetSign-Lock
 tag @a[tag=R.On-SetSign] add R.On-SetSign-Lock
+scoreboard players set @a[tag=R.On-SetSign,scores={R.Stop-CP-Time=..-40}] R.Stop-CP-Time -39
 tag @a remove R.On-SetSign
 
 
