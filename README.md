@@ -10,12 +10,12 @@
   `/function #pk-utility:help` Helpを表示します<br>
   `/function #pk-utility:setting` 設定画面を表示します<br>
   `/function #pk-utility:gamerule` Gameruleの設定画面を表示します<br>
-  `/function #pk-utility:ranking` タイムアタックのランキングを表示します<br>
+  `/function #pk-utility:ranking` タイムアタックのランキングを表示します。コマンドブロックに入力し、信号を与えても実行されます。<br>
   `/function #pk-utility:get` 右クリックでCPへ戻ることができるアイテムを配布します。コマンドブロックへ入力し、信号を与えた場合、近くのプレイヤーへ配布します<br><br>
 
 ### 2. CP
   - set<br>
-    - 1~2ブロック下に 一行目に小文字で「set cp」と書かれた看板を置くことで、CPを更新できる場所を作ることができます<br>
+    - 1~2ブロック下に 一行目に小文字で「set cp」と書かれた看板を置くことで、CPを更新できるポイントを作ることができます<br>
     - 設定を変更することで、ダイヤモンドブロックを踏むだけでCPを更新できるようにすることもできます<br><br>
 
   - tp<br>
