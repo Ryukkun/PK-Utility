@@ -28,9 +28,9 @@
 ### 4. Settings
   - Map-Name
     - /tellraw コマンドなどで使われる記述方法を使うことで、好みのマップ名へ変更することができます。<br>
-    - 自ら記述することが難しい場合は、[mcstacker](https://mcstacker.net/)や、[Minecraft Tools](https://minecraft.tools/en/tellraw.php)などの 外部サイトを使うことで、簡単に生成することもできます。
-    ※注意 チャット欄だと文字入力制限があるため、もし入りきらない場合はコマンドブロックを使用することを推奨します。 
-    - 例 `'[{"text":"◈","color":"dark_aqua"},{"text":" Horary ","color":"aqua","bold":true},{"text":"◈","color":"dark_aqua"}]'`
+    - 自ら記述することが難しい場合は [mcstacker](https://mcstacker.net/)や、[Minecraft Tools](https://minecraft.tools/en/tellraw.php) などの 外部サイトを使うことで、簡単に生成することもできます。<br>
+    ※注意 チャット欄だと文字入力制限があるため、もし入りきらない場合はコマンドブロックを使用することを推奨します。<br>
+    - 例 `'[{"text":"◈","color":"dark_aqua"},{"text":" Horary ","color":"aqua","bold":true},{"text":"◈","color":"dark_aqua"}]'`<br>
 
 ## ◈ ライセンスについて
 このレポジトリでは[MIT Lisence](LICENSE)が適応されています。<br>
