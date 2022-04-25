@@ -33,7 +33,7 @@
     - 例 `/data modify storage pk-utility: Settings.Map-Name set value '[{"text":"◈","color":"dark_aqua"},{"text":" 胎児からの挑戦状 ","color":"aqua","bold":true},{"text":"◈","color":"dark_aqua"}]'`<br><br>
 
   - Perfix
-    - Map-Nameとほとんど同じ<br><br>
+    - 記述方法はMap-Nameとほとんど同じ<br><br>
 
 ## ◈ ライセンスについて
 このレポジトリでは[MIT Lisence](LICENSE)が適応されています。<br>
