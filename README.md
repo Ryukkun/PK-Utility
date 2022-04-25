@@ -9,6 +9,7 @@
 ### 1. コマンド
   `/function #pk-utility:help` Helpを表示します<br>
   `/function #pk-utility:setting` 設定画面を表示します<br>
+  `/function #pk-utility:gamerule` Gameruleの設定画面を表示します<br>
   `/function #pk-utility:ranking` タイムアタックのランキングを表示します<br>
   `/function #pk-utility:get` 右クリックでCPへ戻ることができるアイテムを配布します。コマンドブロックへ入力し、信号を与えた場合、近くのプレイヤーへ配布します<br><br>
 
