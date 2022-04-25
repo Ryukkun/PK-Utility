@@ -25,6 +25,12 @@
   - ジュークボックス・音符ブロックの下にライム色の羊毛が設置されてある状態で、その上を通過することでTAを開始することができます<br>
   - ジュークボックス・音符ブロックの下に赤色の羊毛が設置されてある状態で、その上を通過することでTAの計測を終了することができます<br><br>
 
+### 4. Settings
+  - Map-Name
+    - /tellraw コマンドなどで使われる記述方法を使うことで、好みのマップ名へ変更することができます。<br>
+    - 自ら記述することが難しい場合は、[mcstacker](https://mcstacker.net/)や、[Minecraft Tools](https://minecraft.tools/en/tellraw.php)などの 外部サイトを使うことで、簡単に生成することもできます。
+    - 例 `'[{"text":"◈","color":"dark_aqua"},{"text":" Horary ","color":"aqua","bold":true},{"text":"◈","color":"dark_aqua"}]'` >> <font color="DarkTurquoise">> </font>
+
 ## ◈ ライセンスについて
 このレポジトリでは[MIT Lisence](LICENSE)が適応されています。<br>
 かなり緩いライセンスなので、著作権表示さえ消されていなければ大抵の事は出来るので、どんどん使ってもらって構いません。<br><br>
