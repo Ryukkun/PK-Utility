@@ -1,7 +1,7 @@
-scoreboard objectives add R.TA-Time minecraft.custom:minecraft.play_one_minute
+scoreboard objectives add R.TA-Time dummy
 scoreboard objectives add R.TA-Time-Record dummy
 scoreboard objectives add R.Trigger trigger
-scoreboard objectives add R.Stop-CP-Time minecraft.custom:minecraft.play_one_minute
+scoreboard objectives add R.Stop-CP-Time dummy
 scoreboard objectives add R.PL-Num dummy
 scoreboard objectives add R.Used-CSick minecraft.used:carrot_on_a_stick
 scoreboard objectives add R.X dummy

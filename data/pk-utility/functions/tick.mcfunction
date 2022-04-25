@@ -1,6 +1,8 @@
-#### Tag
+#### Tag + Score
 tag @a remove R.OnGround
 tag @a[nbt={OnGround:1b}] add R.OnGround
+scoreboard players add @a[scores={R.Stop-CP-Time=..-1}] R.Stop-CP-Time 1
+scoreboard players add @a[tag=R.TA] R.TA-Time 1
 
 
 #### Time Attack    --------------------------------------------------------
