@@ -27,10 +27,13 @@
 
 ### 4. Settings
   - Map-Name
-    - /tellraw コマンドなどで使われる記述方法を使うことで、好みのマップ名へ変更することができます。<br>
+    - `/data modify storage pk-utility: Settings.Map-Name set value` の後を /tellraw コマンドなどで使われる記述方法を使い、編集することで、好みのマップ名へ変更することができます。<br>
     - 自ら記述することが難しい場合は [mcstacker](https://mcstacker.net/)や、[Minecraft Tools](https://minecraft.tools/en/tellraw.php) などの 外部サイトを使うことで、簡単に生成することもできます。<br>
-    ※注意 チャット欄だと文字入力制限があるため、もし入りきらない場合はコマンドブロックを使用することを推奨します。<br>
-    - 例 `'[{"text":"◈","color":"dark_aqua"},{"text":" Horary ","color":"aqua","bold":true},{"text":"◈","color":"dark_aqua"}]'`<br>
+    ※ チャット欄だと文字入力制限があるため、コマンドブロックを使用することを推奨します。<br>
+    - 例 `/data modify storage pk-utility: Settings.Map-Name set value '[{"text":"◈","color":"dark_aqua"},{"text":" 胎児からの挑戦状 ","color":"aqua","bold":true},{"text":"◈","color":"dark_aqua"}]'`<br><br>
+
+  - Perfix
+    - Map-Nameとほとんど同じ<br><br>
 
 ## ◈ ライセンスについて
 このレポジトリでは[MIT Lisence](LICENSE)が適応されています。<br>
