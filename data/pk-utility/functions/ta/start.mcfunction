@@ -5,8 +5,14 @@ execute unless data storage pk-utility: Settings.Map-Name run tellraw @s [{"text
 # Effect
 execute if data storage pk-utility: {Settings:{TA:{Sound:1b}}} run playsound minecraft:block.note_block.bell master @s ~ ~ ~ 0.5 1 0.5
 
+# Set CP
+execute if data storage pk-utility: {Settings:{TA:{Start-SetCP:1b}}} store result score @s R.X run data get entity @s Pos[0]
+execute if data storage pk-utility: {Settings:{TA:{Start-SetCP:1b}}} store result score @s R.Y run data get entity @s Pos[1] 100000
+execute if data storage pk-utility: {Settings:{TA:{Start-SetCP:1b}}} store result score @s R.Z run data get entity @s Pos[2]
+execute if data storage pk-utility: {Settings:{TA:{Start-SetCP:1b}}} store result score @s R.F-Yaw run data get entity @s Rotation[0]
+execute if data storage pk-utility: {Settings:{TA:{Start-SetCP:1b}}} store result score @s R.F-Pitch run data get entity @s Rotation[1]
+
 # Tags
-scoreboard players reset @s R.X
 scoreboard players set @s R.TA-Time 0
 tag @s add R.On-TAStart
 tag @s add R.TA
