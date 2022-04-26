@@ -16,3 +16,4 @@ execute if data storage pk-utility: {CP:{Success:1b}} run effect clear @s levita
 scoreboard players set @s R.Stop-CP-Time -100
 tag @s add R.On-Diamond-Lock
 tag @s add R.On-SetSign-Lock
+tag @s add R.On-TAStart-Lock

@@ -7,9 +7,9 @@ scoreboard players add @a[tag=R.TA] R.TA-Time 1
 
 #### Time Attack    --------------------------------------------------------
 # Start
-execute as @a at @s if block ~ ~-1 ~ #pk-utility:ta if block ~ ~-2 ~ lime_wool run tag @s add R.On-TAStart
+execute as @a at @s if block ~ ~-0.0001 ~ #pk-utility:ta if block ~ ~-1.0001 ~ lime_wool run tag @s add R.On-TAStart
 execute as @a[tag=R.On-TAStart,tag=!R.On-TAStart-Lock,gamemode=!spectator] at @s run function pk-utility:ta/start
-tag @a remove R.On-TAStart-Lock
+tag @a[scores={R.Stop-CP-Time=0..}] remove R.On-TAStart-Lock
 tag @a[tag=R.On-TAStart] add R.On-TAStart-Lock
 tag @a remove R.On-TAStart
 

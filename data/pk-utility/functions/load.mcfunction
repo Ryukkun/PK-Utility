@@ -45,6 +45,7 @@ execute unless data storage pk-utility: Settings.CP.TP.Failed-Sound run data mod
 
 execute unless data storage pk-utility: Settings.TA.Sound run data modify storage pk-utility: Settings.TA.Sound set value 1b
 execute unless data storage pk-utility: Settings.TA.Fin-ResetCP run data modify storage pk-utility: Settings.TA.Fin-ResetCP set value 1b
+execute unless data storage pk-utility: Settings.TA.Start-SetCP run data modify storage pk-utility: Settings.TA.Start-SetCP set value 1b
 
 execute unless data storage pk-utility: Settings.World-Spawn run data modify storage pk-utility: Settings.World-Spawn set value 0b
 execute unless data storage pk-utility: Settings.Join-GiveItem run data modify storage pk-utility: Settings.Join-GiveItem set value 1b
