@@ -1,4 +1,4 @@
-# &nbsp;　PK(Parkour)-Utility
+# &nbsp;　PK (Parkour) -Utility
 簡単なCheckPoint(CP)機能や Time Attack(TA)機能が備わっています。<br>
 他にもアスレチック製作者用の機能などが盛りだくさん!!<br><br>
 
